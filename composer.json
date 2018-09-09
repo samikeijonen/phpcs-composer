@@ -23,7 +23,7 @@
 		"wp-coding-standards/wpcs": "^1"
 	},
 	"scripts": {
-		"install-codestandards": "\"vendor/bin/phpcs\" --config-set installed_paths ../../samikeijonen/php-composer",
+		"install-codestandards": "\"vendor/bin/phpcs\" --config-set installed_paths ../../samikeijonen/phpcs-composer",
 		"post-install-cmd": "@install-codestandards",
 		"post-update-cmd" : "@install-codestandards"
 	}
