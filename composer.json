@@ -22,10 +22,5 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
 		"phpcompatibility/phpcompatibility-wp": "^1",
 		"wp-coding-standards/wpcs": "^1"
-	},
-	"scripts": {
-		"install-codestandards": "\"vendor/bin/phpcs\" --config-set default_standard Foxland-Default installed_paths ../../..",
-		"post-install-cmd": "@install-codestandards",
-		"post-update-cmd" : "@install-codestandards"
 	}
 }
