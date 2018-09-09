@@ -1,5 +1,6 @@
 {
 	"name": "samikeijonen/phpcs-composer",
+	"type": "phpcodesniffer-standard",
 	"version": "dev-master",
 	"description": "Custom PHPCS ruleset.",
 	"keywords": ["phpcs", "standards", "WordPress"],
