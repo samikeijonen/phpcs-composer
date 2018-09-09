@@ -26,5 +26,21 @@ composer require --dev samikeijonen/phpcs-composer:dev-master
 Lint your PHP files with the following command:
 
 ```bash
-$ ./vendor/bin/phpcs .
+./vendor/bin/phpcs . --standard=Foxland-Default
+```
+
+Or you can set default (`Foxland-Default`) coding standard in `composer.json` file:
+
+```bash
+"scripts": {
+	"install-codestandards": "\"vendor/bin/phpcs\" --config-set default_standard Foxland-Default",
+	"post-install-cmd": "@install-codestandards",
+	"post-update-cmd" : "@install-codestandards"
+}
+```
+
+Then you can lint with the following command:
+
+```bash
+./vendor/bin/phpcs .
 ```
