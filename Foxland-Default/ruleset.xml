@@ -59,16 +59,6 @@
 			as set in the "Requires at least" tag in the readme.txt file. -->
 	<config name="minimum_supported_wp_version" value="4.9"/>
 
-	<!-- Verify that the text_domain is set to the desired text-domain.
-			Multiple valid text domains can be provided as a new element. -->
-	<rule ref="WordPress.WP.I18n">
-		<properties>
-			<property name="text_domain" type="array">
-				<element value="uuups"/>
-			</property>
-		</properties>
-	</rule>
-
 	<!-- Allow for theme specific exceptions to the file name rules based
 			on the theme hierarchy. -->
 	<rule ref="WordPress.Files.FileName">
