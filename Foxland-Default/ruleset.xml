@@ -79,4 +79,8 @@
 	<rule ref="WordPress.Files.FileName.InvalidClassFileName">
 		<type>warning</type>
 	</rule>
+
+	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
+		<type>warning</type>
+	</rule>
 </ruleset>
