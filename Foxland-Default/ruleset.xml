@@ -83,4 +83,8 @@
 	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
 		<type>warning</type>
 	</rule>
+
+	<rule ref="WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion">
+		<type>warning</type>
+	</rule>
 </ruleset>
