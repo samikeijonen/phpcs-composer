@@ -40,6 +40,9 @@
 		<!-- Allow short open tags. -->
 		<exclude name="Generic.PHP.DisallowShortOpenTag.EchoFound"/>
 
+		<!-- Allow short array syntax. -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+
 		<!-- We have cache busting via dist/mix-manifest.json file. -->
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
 	</rule>
