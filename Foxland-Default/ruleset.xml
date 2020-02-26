@@ -43,6 +43,12 @@
 		<!-- Allow short array syntax. -->
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
 
+		<!-- Allow short ternary syntax. -->
+		<exclude name="WordPress.PHP.DisallowShortTernary"/>
+
+		<!-- Allow class file name other than class-*. -->
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+
 		<!-- We have cache busting via dist/mix-manifest.json file. -->
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
 	</rule>
