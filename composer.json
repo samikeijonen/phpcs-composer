@@ -21,5 +21,14 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "^2",
 		"wp-coding-standards/wpcs": "*"
-	}
+	},
+	"scripts": {
+		"install-cs": [
+		  "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+		  "\"vendor/bin/phpcs\" --config-set default_standard Foxland-Default"
+		],
+		"post-install-cmd": "@install-cs",
+		"post-update-cmd": "@install-cs",
+		"lint": "\"vendor/bin/phpcs\" . "
+	  }
 }
